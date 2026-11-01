@@ -1,0 +1,2 @@
+# Zero external pip dependencies required — runs on pure Python 3.11+ standard library
+# for instant, deterministic Railway container builds.

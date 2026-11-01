@@ -1,0 +1,51 @@
+{
+  "brand_name": "SaptaCode Autonomous Engineering",
+  "public_base_url": "https://audit.saptacode.com",
+  "core_offer": {
+    "name": "Autonomous QA, Security & Conversion Hardening Engine",
+    "pilot_price_usd": 299,
+    "pilot_days": 7,
+    "retainer_price_usd": 2500,
+    "checkout_url": "https://buy.stripe.com/test_pilot_299"
+  },
+  "email_dispatch": {
+    "provider": "ses_webhook",
+    "from_name": "Founder @ AegisSaS",
+    "from_email": "alerts@yourdomain.com",
+    "ses_webhook_url": "",
+    "ses_webhook_api_key": "",
+    "smtp_host": "smtp.gmail.com",
+    "smtp_port": 587,
+    "smtp_username": "",
+    "smtp_password": ""
+  },
+  "daemon": {
+    "interval_seconds": 900,
+    "dashboard_host": "0.0.0.0",
+    "dashboard_port": 8080
+  },
+  "radar": {
+    "channels": ["hackernews", "reddit", "producthunt", "github"],
+    "intent_queries": [
+      "Show HN",
+      "launched with Bolt",
+      "built with Lovable",
+      "Supabase RLS",
+      "Stripe webhook error"
+    ],
+    "min_intent_score": 60
+  },
+  "auditor": {
+    "obscura_cdp_url": "ws://127.0.0.1:9222",
+    "timeout_ms": 30000,
+    "require_evidence_hash": true
+  },
+  "simulator": {
+    "daily_persona_count": 15,
+    "launch_persona_count": 300,
+    "min_pass_score": 72.0
+  },
+  "safety": {
+    "require_human_approval_before_send": true
+  }
+}
